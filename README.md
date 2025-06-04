@@ -1,10 +1,19 @@
-## Contraintes:
+# Eshop
+
+Créer un eshop à partir d'une API
+
+---
 
 ```
-  - Page home carroussel + section produits + de 4 *
-  - Page Produits => Liste de tous les produits (des cards)
-  - Clique sur un produit n'importe ou, on arrive sur la page détails du produit.
-  - Les cards affiche le produit, son titre, son image et son prix (le reste dans détails)
+- Home (Page home avec un carousel de vos produits et une section avec les produits qui ont un rating au dessus de 4)
+- Products (Pages avec tous les produits)
+- ProductDetail (Page avec le détail d'un produit sur lequel on a cliqué)
+- Pour les produits utiliser une api (https://fakestoreapi.com/products/). Si jamais vous trouvez une autre api pour faire votre eshop libre à vous :)
+- Vous êtes des frontend dev du coup faites quelque chose de présentable 😉
 ```
 
-## Bonus: Ajouter un système de like sur les produits
+---
+
+## Bonus :
+
+Rajoutez un bouton like a côté de vos produits qui va les stocker et que vous allez pouvoir réutiliser dans une page favoris

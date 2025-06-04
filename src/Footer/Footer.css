@@ -1,5 +1,5 @@
 footer {
-  border-top: 2px solid hsl(215, 51%, 70%);
+  border-top: 2px solid #5d4fff;
   display: flex;
   text-align: center;
   justify-content: space-between;
@@ -23,13 +23,13 @@ footer {
 
   list-style: none;
 
-  color: hsl(215, 51%, 70%);
+  color: #64ffda;
 }
 
 .fa-Heart,
 .fa-Linkedin,
 .fa-Github {
-  color: hsl(215, 51%, 70%);
+  color: #64ffda;
 
   font-size: 1.5rem;
 }
@@ -47,7 +47,7 @@ footer {
 }
 .wave-text > span {
   -webkit-text-stroke-width: 0.025rem;
-  -webkit-text-stroke-color: purple;
+  -webkit-text-stroke-color: #5d4fff;
 }
 
 .wave-text span {

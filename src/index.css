@@ -39,6 +39,6 @@ html {
   width: 100%;
   min-height: 100vh;
 
-  /* Body background color: Very dark blue */
-  background-color: hsl(226, 43%, 10%);
+  /* Updated background color: Darker charcoal */
+  background-color: #121212;
 }

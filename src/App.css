@@ -3,4 +3,6 @@
   min-height: calc(100vh - 180px);
   display: flex;
   flex-direction: column;
+  background-color: #121212;
+  color: #f5f5f5;
 }

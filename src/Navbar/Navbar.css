@@ -4,16 +4,16 @@
   align-items: center;
   width: 100%;
   padding: 1rem 2rem;
-  background-color: hsla(216, 50%, 16%, 0.85);
+  background-color: rgba(32, 32, 35, 0.9);
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 2.5px solid #c09bc2;
+  border-bottom: 2.5px solid #5d4fff;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 0 4px 24px 0 rgba(192, 155, 194, 0.1),
-    0 1.5px 8px 0 rgba(0, 0, 0, 0.13);
+  box-shadow: 0 4px 24px 0 rgba(93, 79, 255, 0.15),
+    0 1.5px 8px 0 rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   -webkit-font-smoothing: antialiased;
@@ -30,9 +30,9 @@
 .navbar-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: hsl(178, 100%, 50%);
+  color: #64ffda;
   letter-spacing: 1px;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.13);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   user-select: none;
   transition: color 0.2s;
@@ -46,8 +46,8 @@
 .span-love {
   font-size: 1.5rem;
   -webkit-text-stroke-width: 0.025rem;
-  color: #c09bc2;
-  text-shadow: 0 1px 8px rgba(192, 155, 194, 0.18);
+  color: #5d4fff;
+  text-shadow: 0 1px 8px rgba(93, 79, 255, 0.25);
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

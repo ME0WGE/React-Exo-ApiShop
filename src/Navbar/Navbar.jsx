@@ -6,11 +6,10 @@ export default function Navbar() {
     <nav className="navbar">
       <Link to="/">
         <h1 className="navbar-title">
-          <span className="span-love">Love</span>Shop
+          <span className="span-love">API</span>Shop
         </h1>
       </Link>
       <Link to="/products">Products</Link>
-      {/* <FontAwesomeIcon icon={faCartShopping} className="navbar-cart" /> */}
     </nav>
   );
 }
