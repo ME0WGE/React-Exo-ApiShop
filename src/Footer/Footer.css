@@ -1,0 +1,150 @@
+footer {
+  border-top: 2px solid hsl(215, 51%, 70%);
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 75%;
+
+  color: white;
+
+  margin-bottom: 3rem;
+  padding-top: 0.5rem;
+}
+
+.copyright-span-1 {
+  margin-left: 1rem;
+}
+
+.socials-ul {
+  margin: 0;
+  margin-right: 0.25rem;
+
+  list-style: none;
+
+  color: hsl(215, 51%, 70%);
+}
+
+.fa-Heart,
+.fa-Linkedin,
+.fa-Github {
+  color: hsl(215, 51%, 70%);
+
+  font-size: 1.5rem;
+}
+.fa-Heart {
+  margin: 0.25rem;
+}
+.fa-Linkedin {
+  margin-right: 0.5rem;
+}
+
+.wave-text {
+  display: inline-block;
+
+  margin-left: 0.25rem;
+}
+.wave-text > span {
+  -webkit-text-stroke-width: 0.025rem;
+  -webkit-text-stroke-color: purple;
+}
+
+.wave-text span {
+  display: inline-block;
+  animation: wave 1.5s infinite ease-in-out;
+}
+
+/* Créer un effet de vague sur le nom */
+.wave-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave-text span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave-text span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave-text span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave-text span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave-text span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave-text span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.wave-text span:nth-child(11) {
+  animation-delay: 1s;
+}
+.wave-text span:nth-child(12) {
+  animation-delay: 1.1s;
+}
+.wave-text span:nth-child(13) {
+  animation-delay: 1.2s;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+/* Tablette */
+@media (max-width: 900px) {
+  footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .copyright-span-1 {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    display: block;
+  }
+
+  .socials-ul {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .wave-text {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
