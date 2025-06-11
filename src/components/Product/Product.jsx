@@ -1,9 +1,10 @@
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Product.css";
 import { useState } from "react";
 
 export default function Product({ product }) {
   const [isHovering, setIsHovering] = useState(false);
+  const navigate = useNavigate();
 
   // Si aucun produit n'est passé, retourner null
   if (!product) return null;
@@ -47,11 +48,10 @@ export default function Product({ product }) {
     return stars;
   };
 
-  const handleClick = (e) => {
-    e.stopPropagation();
-
-    <Navigate to={`/products/${product.id}`} />;
+  const handleClick = () => {
+    navigate(`/products/${product.id}`);
   };
+
   return (
     <div
       className="product-card"
@@ -62,9 +62,7 @@ export default function Product({ product }) {
         <img src={image} alt={title} className="product-image" />
         {isHovering && (
           <div className="product-overlay">
-            <button className="add-to-cart-btn" onClick={handleClick}>
-              Show Details
-            </button>
+            <button className="add-to-cart-btn">Show Details</button>
           </div>
         )}
       </div>

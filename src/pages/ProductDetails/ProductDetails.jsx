@@ -26,11 +26,13 @@ export default function ProductDetails() {
       });
   }, [id]);
 
+  // Générer les étoiles en fonction du rating
   const renderStars = (rate) => {
     const stars = [];
     const fullStars = Math.floor(rate);
     const halfStar = rate % 1 >= 0.5;
 
+    // Étoiles pleines
     for (let i = 0; i < fullStars; i++) {
       stars.push(
         <span key={`full-${i}`} className="star full">
@@ -39,6 +41,7 @@ export default function ProductDetails() {
       );
     }
 
+    // Demi-étoile si nécessaire
     if (halfStar) {
       stars.push(
         <span key="half" className="star half">
@@ -47,6 +50,7 @@ export default function ProductDetails() {
       );
     }
 
+    // Étoiles vides
     const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
     for (let i = 0; i < emptyStars; i++) {
       stars.push(
