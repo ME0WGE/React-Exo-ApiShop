@@ -23,7 +23,7 @@ export default function Products() {
 
         // Extract unique categories from the products
         const uniqueCategories = [
-          ...new Set(response.data.map((product) => product.category)),
+          ...new Set(response.data.map((product) => product.category)), // Set() permet de supprimer les doublons du tableau
         ];
         setCategories(uniqueCategories);
 
