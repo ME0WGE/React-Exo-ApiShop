@@ -25,6 +25,11 @@ export default function ProductDetails() {
         setLoading(false);
       });
   }, [id]);
+
+  if (loading) return <div className="loading">Loading product details...</div>;
+  if (error) return <div className="error">Error: {error}</div>;
+  if (!product) return <div className="error">Product not found</div>;
+
   return (
     <>
       <></>
